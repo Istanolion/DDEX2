@@ -1,0 +1,5 @@
+|led
+entrada => salida.DATAIN
+salida << entrada.DB_MAX_OUTPUT_PORT_TYPE
+
+
