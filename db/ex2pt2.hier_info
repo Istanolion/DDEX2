@@ -1,5 +1,44 @@
-|led
-entrada => salida.DATAIN
-salida << entrada.DB_MAX_OUTPUT_PORT_TYPE
+|final
+pin_name1 => led:inst.entrada
+
+
+|final|led:inst
+entrada => count[0].CLK
+entrada => count[1].CLK
+entrada => count[2].CLK
+entrada => count[3].CLK
+entrada => count[4].CLK
+salida[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+salida[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
+salida[5] <= <GND>
+salida[6] <= <GND>
+salida[7] <= <GND>
+salida[8] <= <GND>
+salida[9] <= <GND>
+salida[10] <= <GND>
+salida[11] <= <GND>
+salida[12] <= <GND>
+salida[13] <= <GND>
+salida[14] <= <GND>
+salida[15] <= <GND>
+salida[16] <= <GND>
+salida[17] <= <GND>
+salida[18] <= <GND>
+salida[19] <= <GND>
+salida[20] <= <GND>
+salida[21] <= <GND>
+salida[22] <= <GND>
+salida[23] <= <GND>
+salida[24] <= <GND>
+salida[25] <= <GND>
+salida[26] <= <GND>
+salida[27] <= <GND>
+salida[28] <= <GND>
+salida[29] <= <GND>
+salida[30] <= <GND>
+salida[31] <= <GND>
 
 
