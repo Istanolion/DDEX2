@@ -74,7 +74,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : A5        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A6        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A7        :        :                   :         : 8         :                
-salida                       : A8        : output : 3.3-V LVTTL       :         : 8         : Y              
+sensors                      : A8        : output : 3.3-V LVTTL       :         : 8         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A9        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A10       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A11       :        :                   :         : 8         :                
@@ -113,7 +113,7 @@ VCCA3                        : D4        : power  :                   : 3.0V/3.3
 GND                          : D5        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
 ~ALTERA_CONFIG_SEL~ / RESERVED_INPUT : D7        : input  : 3.3-V LVTTL       :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8         :                
+reloj                        : D8        : output : 3.3-V LVTTL       :         : 8         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 6         :                
 VCCA2                        : D10       : power  :                   : 3.0V/3.3V :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 6         :                
@@ -163,7 +163,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : H2        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : H3        :        :                   :         : 1B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H4        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H5        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H6        :        :                   :         : 2         :                
+clk                          : H6        : input  : 3.3-V LVTTL       :         : 2         : Y              
 VCC_ONE                      : H7        : power  :                   : 3.0V/3.3V :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H8        :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H9        :        :                   :         : 5         :                
@@ -182,8 +182,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : J8        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : J9        :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J10       :        :                   :         : 5         :                
 VCCIO5                       : J11       : power  :                   : 3.3V    : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J12       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J13       :        :                   :         : 5         :                
+SD                           : J12       : output : 3.3-V LVTTL       :         : 5         : Y              
+outclk                       : J13       : output : 3.3-V LVTTL       :         : 5         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : K1        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K2        :        :                   :         : 2         :                
 VCCIO2                       : K3        : power  :                   : 3.3V    : 2         :                
@@ -208,7 +208,7 @@ VCCIO3                       : L8        : power  :                   : 3.3V    
 GND                          : L9        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L10       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L11       :        :                   :         : 3         :                
-entrada                      : L12       : input  : 3.3-V LVTTL       :         : 5         : Y              
+sensor                       : L12       : input  : 3.3-V LVTTL       :         : 5         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : L13       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M1        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M2        :        :                   :         : 2         :                

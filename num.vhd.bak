@@ -1,0 +1,25 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+entity num is
+    Port ( entrada : in  integer;
+           salida : out  std_logic);
+end num;
+
+architecture Behavioral of num is
+constant max_count: INTEGER := 16;
+signal temp: INTEGER range 0 to max_count;
+begin
+	process (entrada, temp)
+	begin
+	if count<max_count then	
+		salida<=entrada;
+		if falling_edge (entrada) then
+			count<= count+1;
+		end if;
+	else
+		salida<='0';
+	end if;
+	
+	end process;
+end Behavioral;

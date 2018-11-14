@@ -2,7 +2,32 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "SD",
+					"strict" : false
+				},
+				{
+					"name" : "outclk",
+					"strict" : false
+				},
+				{
+					"name" : "sensors",
+					"strict" : false
+				},
+				{
+					"name" : "reloj",
+					"strict" : false
+				},
+				{
+					"name" : "sensor",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

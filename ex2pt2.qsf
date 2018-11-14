@@ -62,9 +62,18 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
 set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
 set_global_assignment -name BDF_FILE output_files/final.bdf
+set_global_assignment -name VHDL_FILE output_files/to7s.vhd
+set_global_assignment -name VHDL_FILE digital_clock_top.vhd
+set_global_assignment -name VHDL_FILE cycles.vhd
+set_location_assignment PIN_H6 -to clk
+set_location_assignment PIN_L12 -to sensor
+set_location_assignment PIN_J12 -to SD
+set_location_assignment PIN_J13 -to outclk
+set_location_assignment PIN_A8 -to sensors
+set_location_assignment PIN_D8 -to reloj
+set_global_assignment -name VHDL_FILE num.vhd
+set_global_assignment -name VHDL_FILE deb.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_L12 -to pin_name1
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VHDL_FILE output_files/to7s.vhd

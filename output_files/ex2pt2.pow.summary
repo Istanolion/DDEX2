@@ -1,12 +1,12 @@
-Power Analyzer Status : Successful - Mon Nov 12 11:29:08 2018
+Power Analyzer Status : Successful - Tue Nov 13 20:55:56 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : ex2pt2
-Top-level Entity Name : led
+Top-level Entity Name : final
 Family : MAX 10
 Device : 10M08SAU169C8G
 Power Models : Final
-Total Thermal Power Dissipation : 148.14 mW
+Total Thermal Power Dissipation : 148.32 mW
 Core Dynamic Thermal Power Dissipation : 0.00 mW
 Core Static Thermal Power Dissipation : 110.73 mW
-I/O Thermal Power Dissipation : 37.41 mW
+I/O Thermal Power Dissipation : 37.59 mW
 Power Estimation Confidence : Low: user provided insufficient toggle rate data

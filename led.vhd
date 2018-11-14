@@ -1,6 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use IEEE.STD_LOGIC_ARITH.ALL;
 entity led is
     Port ( entrada : in  STD_LOGIC;
            salida : out  Integer);

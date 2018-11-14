@@ -1,13 +1,17 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use IEEE.STD_LOGIC_ARITH.ALL;
 entity to7s is
     Port ( cont : in  integer;
-           salida : out  std_logic);
+			  entrada: in std_logic;
+			  seguira : in std_logic;
+           out7 : out  std_logic);
 end to7s;
 
 architecture Behavioral of to7s is
-signal count integer range 0 to 8;
+signal temp : integer range 0 to 16;
+signal salida :std_logic;
+signal count : integer range 0 to 8:=0;
 constant valor0 : std_logic_vector (7 downto 0):="00111111";
 constant valor1 : std_logic_vector (7 downto 0):="00000110";
 constant valor2 : std_logic_vector (7 downto 0):="01011011"; 
@@ -25,16 +29,63 @@ constant valor13 : std_logic_vector (7 downto 0):="00111100";
 constant valor14 : std_logic_vector (7 downto 0):="01011110";
 constant valor15 : std_logic_vector (7 downto 0):="01110001";
 begin
-	process (cont)
+	process (cont,entrada,salida, temp, seguira)
 	begin
-	if entrada'event and entrada='1' then
-			if count < max_count then 
-				count <= count+1;
-			else
-				count <= 0;
-			end if;
+		if seguira='0' then
+		if rising_edge (entrada) then 
+			if cont=0  then
+				salida<=valor0(count);
+				count<=count+1;
+			elsif cont=1  then
+				salida<=valor1(count);
+				count<=count+1;
+			elsif cont=2  then
+				salida<=valor2(count);
+				count<=count+1;
+			elsif cont=3  then
+				salida<=valor3(count);
+				count<=count+1;
+			elsif cont=4  then
+				salida<=valor4(count);
+				count<=count+1;
+			elsif cont=5  then
+				salida<=valor5(count);
+				count<=count+1;
+			elsif cont=6  then
+				salida<=valor6(count);
+				count<=count+1;
+			elsif cont=7  then
+				salida<=valor7(count);
+				count<=count+1;
+			elsif cont=8  then
+				salida<=valor8(count);
+				count<=count+1;
+			elsif cont=9  then
+				salida<=valor9(count);
+				count<=count+1;
+			elsif cont=10  then
+				salida<=valor10(count);
+				count<=count+1;
+			elsif cont=11  then
+				salida<=valor11(count);
+				count<=count+1;
+			elsif cont=12  then
+				salida<=valor12(count);
+				count<=count+1;
+			elsif cont=13  then
+				salida<=valor13(count);
+				count<=count+1;
+			elsif cont=14 then
+				salida<=valor14(count);
+				count<=count+1;
+			elsif cont=15  then
+				salida<=valor15(count);
+				count<=count+1;
+			end if;	
 		end if;
-	salida<=count;
+		else 
+			count<=0;
+		end if;
 	end process;
-
+	out7<=salida;
 end Behavioral;
