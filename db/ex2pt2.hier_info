@@ -1,7 +1,7 @@
 |final
 SD <= to7s:inst3.out7
-clk => digital_clock_top1s:inst1.clk12mhz
-clk => digital_clock_top1s:inst2.clk12mhz
+clk => digital_clock_top:inst6.clk12mhz
+clk => digital_clocksec:inst8.clk12mhz
 sensor => led:inst.led
 sensor => sensors.DATAIN
 outclk <= cycles:inst5.salida
@@ -541,14 +541,14 @@ entrada => count[0].CLK
 entrada => count[1].CLK
 entrada => count[2].CLK
 entrada => count[3].CLK
-entrada => count2[0].CLK
-entrada => count2[1].CLK
-entrada => count2[2].CLK
-entrada => count2[3].CLK
-reactivar => count2[0].PRESET
-reactivar => count2[1].ACLR
-reactivar => count2[2].ACLR
-reactivar => count2[3].ACLR
+entrada => counter[0].CLK
+entrada => counter[1].CLK
+entrada => counter[2].CLK
+entrada => counter[3].CLK
+reactivar => counter[0].PRESET
+reactivar => counter[1].ACLR
+reactivar => counter[2].ACLR
+reactivar => counter[3].ACLR
 reactivar => count[0].ACLR
 reactivar => count[1].ACLR
 reactivar => count[2].ACLR
@@ -556,7 +556,7 @@ reactivar => count[3].ACLR
 salida <= salida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|final|digital_clock_top1s:inst1
+|final|digital_clock_top:inst6
 clk12mhz => clk_state.CLK
 clk12mhz => count[0].CLK
 clk12mhz => count[1].CLK
@@ -575,13 +575,6 @@ clk12mhz => count[13].CLK
 clk12mhz => count[14].CLK
 clk12mhz => count[15].CLK
 clk12mhz => count[16].CLK
-clk12mhz => count[17].CLK
-clk12mhz => count[18].CLK
-clk12mhz => count[19].CLK
-clk12mhz => count[20].CLK
-clk12mhz => count[21].CLK
-clk12mhz => count[22].CLK
-clk12mhz => count[23].CLK
 clk <= clk_state.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -627,11 +620,9 @@ salida <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |final|led:inst
-led => count[0].ENA
-led => count[1].ENA
-led => count[2].ENA
-led => count[3].ENA
-led => count[4].ENA
+led => process_0.IN1
+led => temp.PRESET
+clk => temp.CLK
 clk => count[0].CLK
 clk => count[1].CLK
 clk => count[2].CLK
@@ -671,7 +662,7 @@ salida[30] <= <GND>
 salida[31] <= <GND>
 
 
-|final|digital_clock_top1s:inst2
+|final|digital_clocksec:inst8
 clk12mhz => clk_state.CLK
 clk12mhz => count[0].CLK
 clk12mhz => count[1].CLK
@@ -696,7 +687,6 @@ clk12mhz => count[19].CLK
 clk12mhz => count[20].CLK
 clk12mhz => count[21].CLK
 clk12mhz => count[22].CLK
-clk12mhz => count[23].CLK
 clk <= clk_state.DB_MAX_OUTPUT_PORT_TYPE
 
 

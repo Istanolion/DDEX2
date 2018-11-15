@@ -232,9 +232,9 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 40 128 184 208)
-	(text "digital_clock_top1s" (rect 5 0 98 12)(font "Arial" ))
-	(text "inst2" (rect 8 64 31 76)(font "Arial" ))
+	(rect 168 296 312 376)
+	(text "digital_clock_top" (rect 5 0 86 12)(font "Arial" ))
+	(text "inst6" (rect 8 64 31 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -254,9 +254,9 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 168 296 312 376)
-	(text "digital_clock_top1s" (rect 5 0 98 12)(font "Arial" ))
-	(text "inst1" (rect 8 64 31 76)(font "Arial" ))
+	(rect 48 128 192 208)
+	(text "digital_clocksec" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst8" (rect 8 64 31 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -402,16 +402,8 @@ refer to the applicable agreement for further details.
 	(pt 384 328)
 )
 (connector
-	(pt 192 160)
-	(pt 184 160)
-)
-(connector
 	(pt 192 128)
 	(pt 192 160)
-)
-(connector
-	(pt 40 160)
-	(pt 32 160)
 )
 (connector
 	(pt 32 328)
@@ -424,6 +416,10 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 32 328)
 	(pt 168 328)
+)
+(connector
+	(pt 48 160)
+	(pt 32 160)
 )
 (junction (pt 704 328))
 (junction (pt 560 328))

@@ -16,7 +16,7 @@ signal count: INTEGER range 0 to max_count:=0;
 begin
 	process (led, count,clk,bool,temp)
 	begin
-		if (clk'event and clk='1' and led='1') then
+		if (clk'event and clk='1' and led='1'and bool='1') then
 				if count < max_count then 
 					count <= count+1;
 					temp<='0';

@@ -9,12 +9,12 @@ end cycles;
 
 architecture Behavioral of cycles is
 signal primero: std_logic:='1';
-constant max_count2: INTEGER := 11;
-signal count2: INTEGER range 1 to max_count2;
+constant max_counter: INTEGER := 11;
+signal counter: INTEGER range 1 to max_counter;
 constant max_count: INTEGER := 10;
 signal count: INTEGER range 0 to max_count;
 begin
-	process (entrada, count,count2,primero)
+	process (entrada, count,counter,primero)
 	begin
 	if primero='1' then
 		if count<max_count then	
@@ -27,10 +27,10 @@ begin
 			primero<='0';
 		end if;
 	else
-		if count2<max_count2 then	
+		if counter<max_counter then	
 			salida<=entrada;
 			if falling_edge (entrada) then
-				count2<= count2+1;
+				counter<= counter+1;
 			end if;
 		else
 			salida<='0';
@@ -38,7 +38,7 @@ begin
 	end if;
 	if reactivar='1' then
 		count<=0;
-		count2<=1;
+		counter<=1;
 	end if;
 	end process;
 end Behavioral;

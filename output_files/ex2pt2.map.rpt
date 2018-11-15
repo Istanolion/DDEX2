@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ex2pt2
-Wed Nov 14 15:47:20 2018
+Wed Nov 14 20:41:57 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -45,15 +45,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 14 15:47:20 2018       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 14 20:41:57 2018       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; ex2pt2                                      ;
 ; Top-level Entity Name              ; final                                       ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 68                                          ;
-;     Total combinational functions  ; 68                                          ;
-;     Dedicated logic registers      ; 39                                          ;
-; Total registers                    ; 39                                          ;
+; Total logic elements               ; 92                                          ;
+;     Total combinational functions  ; 92                                          ;
+;     Dedicated logic registers      ; 56                                          ;
+; Total registers                    ; 56                                          ;
 ; Total pins                         ; 6                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -156,76 +156,78 @@ refer to the applicable agreement for further details.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                  ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+---------+
-; led.vhd                          ; yes             ; User VHDL File                     ; C:/Users/akuma/Documents/GitHub/DDEX2/led.vhd                 ;         ;
-; output_files/final.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/akuma/Documents/GitHub/DDEX2/output_files/final.bdf  ;         ;
-; output_files/to7s.vhd            ; yes             ; User VHDL File                     ; C:/Users/akuma/Documents/GitHub/DDEX2/output_files/to7s.vhd   ;         ;
-; cycles.vhd                       ; yes             ; User VHDL File                     ; C:/Users/akuma/Documents/GitHub/DDEX2/cycles.vhd              ;         ;
-; num.vhd                          ; yes             ; User VHDL File                     ; C:/Users/akuma/Documents/GitHub/DDEX2/num.vhd                 ;         ;
-; digital_clock_top1s.vhd          ; yes             ; User VHDL File                     ; C:/Users/akuma/Documents/GitHub/DDEX2/digital_clock_top1s.vhd ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+---------+
+; led.vhd                          ; yes             ; User VHDL File                     ; Z:/Istanolion/Documents/GitHub/DDEX2/led.vhd                ;         ;
+; output_files/final.bdf           ; yes             ; User Block Diagram/Schematic File  ; Z:/Istanolion/Documents/GitHub/DDEX2/output_files/final.bdf ;         ;
+; output_files/to7s.vhd            ; yes             ; User VHDL File                     ; Z:/Istanolion/Documents/GitHub/DDEX2/output_files/to7s.vhd  ;         ;
+; digital_clock_top.vhd            ; yes             ; User VHDL File                     ; Z:/Istanolion/Documents/GitHub/DDEX2/digital_clock_top.vhd  ;         ;
+; cycles.vhd                       ; yes             ; User VHDL File                     ; Z:/Istanolion/Documents/GitHub/DDEX2/cycles.vhd             ;         ;
+; num.vhd                          ; yes             ; User VHDL File                     ; Z:/Istanolion/Documents/GitHub/DDEX2/num.vhd                ;         ;
+; digital_clocksec.vhd             ; yes             ; User VHDL File                     ; Z:/Istanolion/Documents/GitHub/DDEX2/digital_clocksec.vhd   ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                         ;
-+---------------------------------------------+---------------------------------------+
-; Resource                                    ; Usage                                 ;
-+---------------------------------------------+---------------------------------------+
-; Estimated Total logic elements              ; 68                                    ;
-;                                             ;                                       ;
-; Total combinational functions               ; 68                                    ;
-; Logic element usage by number of LUT inputs ;                                       ;
-;     -- 4 input functions                    ; 25                                    ;
-;     -- 3 input functions                    ; 9                                     ;
-;     -- <=2 input functions                  ; 34                                    ;
-;                                             ;                                       ;
-; Logic elements by mode                      ;                                       ;
-;     -- normal mode                          ; 41                                    ;
-;     -- arithmetic mode                      ; 27                                    ;
-;                                             ;                                       ;
-; Total registers                             ; 39                                    ;
-;     -- Dedicated logic registers            ; 39                                    ;
-;     -- I/O registers                        ; 0                                     ;
-;                                             ;                                       ;
-; I/O pins                                    ; 6                                     ;
-;                                             ;                                       ;
-; Embedded Multiplier 9-bit elements          ; 0                                     ;
-;                                             ;                                       ;
-; Maximum fan-out node                        ; digital_clock_top1s:inst1|LessThan0~5 ;
-; Maximum fan-out                             ; 26                                    ;
-; Total fan-out                               ; 323                                   ;
-; Average fan-out                             ; 2.71                                  ;
-+---------------------------------------------+---------------------------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 92        ;
+;                                             ;           ;
+; Total combinational functions               ; 92        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 30        ;
+;     -- 3 input functions                    ; 13        ;
+;     -- <=2 input functions                  ; 49        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 50        ;
+;     -- arithmetic mode                      ; 42        ;
+;                                             ;           ;
+; Total registers                             ; 56        ;
+;     -- Dedicated logic registers            ; 56        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 6         ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 42        ;
+; Total fan-out                               ; 435       ;
+; Average fan-out                             ; 2.72      ;
++---------------------------------------------+-----------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                         ;
-+--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name              ; Entity Name         ; Library Name ;
-+--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------+---------------------+--------------+
-; |final                         ; 68 (0)              ; 39 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 6    ; 0            ; 0          ; |final                           ; final               ; work         ;
-;    |cycles:inst5|              ; 6 (6)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |final|cycles:inst5              ; cycles              ; work         ;
-;    |digital_clock_top1s:inst1| ; 31 (31)             ; 25 (25)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |final|digital_clock_top1s:inst1 ; digital_clock_top1s ; work         ;
-;    |digital_clock_top1s:inst2| ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |final|digital_clock_top1s:inst2 ; digital_clock_top1s ; work         ;
-;    |led:inst|                  ; 5 (5)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |final|led:inst                  ; led                 ; work         ;
-;    |num:inst7|                 ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |final|num:inst7                 ; num                 ; work         ;
-;    |to7s:inst3|                ; 17 (17)             ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |final|to7s:inst3                ; to7s                ; work         ;
-+--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------+---------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                   ;
++------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name            ; Entity Name       ; Library Name ;
++------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------+-------------------+--------------+
+; |final                       ; 92 (0)              ; 56 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 6    ; 0            ; 0          ; |final                         ; final             ; work         ;
+;    |cycles:inst5|            ; 6 (6)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |final|cycles:inst5            ; cycles            ; work         ;
+;    |digital_clock_top:inst6| ; 24 (24)             ; 18 (18)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |final|digital_clock_top:inst6 ; digital_clock_top ; work         ;
+;    |digital_clocksec:inst8|  ; 30 (30)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |final|digital_clocksec:inst8  ; digital_clocksec  ; work         ;
+;    |led:inst|                ; 7 (7)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |final|led:inst                ; led               ; work         ;
+;    |num:inst7|               ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |final|num:inst7               ; num               ; work         ;
+;    |to7s:inst3|              ; 17 (17)             ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |final|to7s:inst3              ; to7s              ; work         ;
++------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -244,38 +246,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                       ;
-+----------------------------------------+-------------------------------------------------+
-; Register name                          ; Reason for Removal                              ;
-+----------------------------------------+-------------------------------------------------+
-; digital_clock_top1s:inst2|count[23]    ; Merged with digital_clock_top1s:inst1|count[23] ;
-; digital_clock_top1s:inst2|count[22]    ; Merged with digital_clock_top1s:inst1|count[22] ;
-; digital_clock_top1s:inst2|count[21]    ; Merged with digital_clock_top1s:inst1|count[21] ;
-; digital_clock_top1s:inst2|count[20]    ; Merged with digital_clock_top1s:inst1|count[20] ;
-; digital_clock_top1s:inst2|count[19]    ; Merged with digital_clock_top1s:inst1|count[19] ;
-; digital_clock_top1s:inst2|count[18]    ; Merged with digital_clock_top1s:inst1|count[18] ;
-; digital_clock_top1s:inst2|count[17]    ; Merged with digital_clock_top1s:inst1|count[17] ;
-; digital_clock_top1s:inst2|count[16]    ; Merged with digital_clock_top1s:inst1|count[16] ;
-; digital_clock_top1s:inst2|count[15]    ; Merged with digital_clock_top1s:inst1|count[15] ;
-; digital_clock_top1s:inst2|count[14]    ; Merged with digital_clock_top1s:inst1|count[14] ;
-; digital_clock_top1s:inst2|count[13]    ; Merged with digital_clock_top1s:inst1|count[13] ;
-; digital_clock_top1s:inst2|count[12]    ; Merged with digital_clock_top1s:inst1|count[12] ;
-; digital_clock_top1s:inst2|count[11]    ; Merged with digital_clock_top1s:inst1|count[11] ;
-; digital_clock_top1s:inst2|count[10]    ; Merged with digital_clock_top1s:inst1|count[10] ;
-; digital_clock_top1s:inst2|count[9]     ; Merged with digital_clock_top1s:inst1|count[9]  ;
-; digital_clock_top1s:inst2|count[8]     ; Merged with digital_clock_top1s:inst1|count[8]  ;
-; digital_clock_top1s:inst2|count[7]     ; Merged with digital_clock_top1s:inst1|count[7]  ;
-; digital_clock_top1s:inst2|count[6]     ; Merged with digital_clock_top1s:inst1|count[6]  ;
-; digital_clock_top1s:inst2|count[5]     ; Merged with digital_clock_top1s:inst1|count[5]  ;
-; digital_clock_top1s:inst2|count[4]     ; Merged with digital_clock_top1s:inst1|count[4]  ;
-; digital_clock_top1s:inst2|count[3]     ; Merged with digital_clock_top1s:inst1|count[3]  ;
-; digital_clock_top1s:inst2|count[2]     ; Merged with digital_clock_top1s:inst1|count[2]  ;
-; digital_clock_top1s:inst2|count[1]     ; Merged with digital_clock_top1s:inst1|count[1]  ;
-; digital_clock_top1s:inst2|count[0]     ; Merged with digital_clock_top1s:inst1|count[0]  ;
-; to7s:inst3|count[3]                    ; Lost fanout                                     ;
-; Total Number of Removed Registers = 25 ;                                                 ;
-+----------------------------------------+-------------------------------------------------+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; to7s:inst3|count[3]                   ; Lost fanout        ;
+; Total Number of Removed Registers = 1 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -283,12 +261,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 39    ;
-; Number of registers using Synchronous Clear  ; 29    ;
+; Total registers                              ; 56    ;
+; Number of registers using Synchronous Clear  ; 45    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 7     ;
+; Number of registers using Asynchronous Clear ; 8     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 9     ;
+; Number of registers using Clock Enable       ; 7     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -298,8 +276,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; cycles:inst5|count2[0]                 ; 5       ;
-; Total number of inverted registers = 1 ;         ;
+; cycles:inst5|counter[0]                ; 5       ;
+; led:inst|temp                          ; 2       ;
+; Total number of inverted registers = 2 ;         ;
 +----------------------------------------+---------+
 
 
@@ -309,21 +288,20 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 6                           ;
-; cycloneiii_ff         ; 39                          ;
-;     CLR               ; 5                           ;
-;     ENA               ; 2                           ;
+; cycloneiii_ff         ; 56                          ;
+;     CLR               ; 6                           ;
 ;     ENA CLR           ; 2                           ;
 ;     ENA SCLR          ; 5                           ;
-;     SCLR              ; 24                          ;
-;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 68                          ;
-;     arith             ; 27                          ;
-;         2 data inputs ; 27                          ;
-;     normal            ; 41                          ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 9                           ;
-;         4 data inputs ; 25                          ;
+;     SCLR              ; 40                          ;
+;     plain             ; 3                           ;
+; cycloneiii_lcell_comb ; 92                          ;
+;     arith             ; 42                          ;
+;         2 data inputs ; 42                          ;
+;     normal            ; 50                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 30                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
 ; Average LUT depth     ; 2.64                        ;
@@ -335,7 +313,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -345,73 +323,76 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov 14 15:46:59 2018
+    Info: Processing started: Wed Nov 14 20:41:45 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ex2pt2 -c ex2pt2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file led.vhd
-    Info (12022): Found design unit 1: led-Behavioral File: C:/Users/akuma/Documents/GitHub/DDEX2/led.vhd Line: 10
-    Info (12023): Found entity 1: led File: C:/Users/akuma/Documents/GitHub/DDEX2/led.vhd Line: 4
+    Info (12022): Found design unit 1: led-Behavioral File: Z:/Istanolion/Documents/GitHub/DDEX2/led.vhd Line: 10
+    Info (12023): Found entity 1: led File: Z:/Istanolion/Documents/GitHub/DDEX2/led.vhd Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/final.bdf
     Info (12023): Found entity 1: final
 Info (12021): Found 2 design units, including 1 entities, in source file output_files/to7s.vhd
-    Info (12022): Found design unit 1: to7s-Behavioral File: C:/Users/akuma/Documents/GitHub/DDEX2/output_files/to7s.vhd Line: 11
-    Info (12023): Found entity 1: to7s File: C:/Users/akuma/Documents/GitHub/DDEX2/output_files/to7s.vhd Line: 4
+    Info (12022): Found design unit 1: to7s-Behavioral File: Z:/Istanolion/Documents/GitHub/DDEX2/output_files/to7s.vhd Line: 11
+    Info (12023): Found entity 1: to7s File: Z:/Istanolion/Documents/GitHub/DDEX2/output_files/to7s.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file digital_clock_top.vhd
-    Info (12022): Found design unit 1: digital_clock_top-rtl File: C:/Users/akuma/Documents/GitHub/DDEX2/digital_clock_top.vhd Line: 11
-    Info (12023): Found entity 1: digital_clock_top File: C:/Users/akuma/Documents/GitHub/DDEX2/digital_clock_top.vhd Line: 4
+    Info (12022): Found design unit 1: digital_clock_top-rtl File: Z:/Istanolion/Documents/GitHub/DDEX2/digital_clock_top.vhd Line: 11
+    Info (12023): Found entity 1: digital_clock_top File: Z:/Istanolion/Documents/GitHub/DDEX2/digital_clock_top.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file cycles.vhd
-    Info (12022): Found design unit 1: cycles-Behavioral File: C:/Users/akuma/Documents/GitHub/DDEX2/cycles.vhd Line: 10
-    Info (12023): Found entity 1: cycles File: C:/Users/akuma/Documents/GitHub/DDEX2/cycles.vhd Line: 4
+    Info (12022): Found design unit 1: cycles-Behavioral File: Z:/Istanolion/Documents/GitHub/DDEX2/cycles.vhd Line: 10
+    Info (12023): Found entity 1: cycles File: Z:/Istanolion/Documents/GitHub/DDEX2/cycles.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file num.vhd
-    Info (12022): Found design unit 1: num-Behavioral File: C:/Users/akuma/Documents/GitHub/DDEX2/num.vhd Line: 9
-    Info (12023): Found entity 1: num File: C:/Users/akuma/Documents/GitHub/DDEX2/num.vhd Line: 4
+    Info (12022): Found design unit 1: num-Behavioral File: Z:/Istanolion/Documents/GitHub/DDEX2/num.vhd Line: 9
+    Info (12023): Found entity 1: num File: Z:/Istanolion/Documents/GitHub/DDEX2/num.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file deb.vhd
-    Info (12022): Found design unit 1: deb-rtl File: C:/Users/akuma/Documents/GitHub/DDEX2/deb.vhd Line: 11
-    Info (12023): Found entity 1: deb File: C:/Users/akuma/Documents/GitHub/DDEX2/deb.vhd Line: 4
+    Info (12022): Found design unit 1: deb-rtl File: Z:/Istanolion/Documents/GitHub/DDEX2/deb.vhd Line: 11
+    Info (12023): Found entity 1: deb File: Z:/Istanolion/Documents/GitHub/DDEX2/deb.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file digital_clock_top1s.vhd
-    Info (12022): Found design unit 1: digital_clock_top1s-rtl File: C:/Users/akuma/Documents/GitHub/DDEX2/digital_clock_top1s.vhd Line: 11
-    Info (12023): Found entity 1: digital_clock_top1s File: C:/Users/akuma/Documents/GitHub/DDEX2/digital_clock_top1s.vhd Line: 4
+    Info (12022): Found design unit 1: digital_clock_top1s-rtl File: Z:/Istanolion/Documents/GitHub/DDEX2/digital_clock_top1s.vhd Line: 11
+    Info (12023): Found entity 1: digital_clock_top1s File: Z:/Istanolion/Documents/GitHub/DDEX2/digital_clock_top1s.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file digital_clocksec.vhd
+    Info (12022): Found design unit 1: digital_clocksec-rtl File: Z:/Istanolion/Documents/GitHub/DDEX2/digital_clocksec.vhd Line: 11
+    Info (12023): Found entity 1: digital_clocksec File: Z:/Istanolion/Documents/GitHub/DDEX2/digital_clocksec.vhd Line: 4
 Info (12127): Elaborating entity "final" for the top level hierarchy
 Info (12128): Elaborating entity "to7s" for hierarchy "to7s:inst3"
 Info (12128): Elaborating entity "cycles" for hierarchy "cycles:inst5"
-Warning (10492): VHDL Process Statement warning at cycles.vhd(39): signal "reactivar" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/akuma/Documents/GitHub/DDEX2/cycles.vhd Line: 39
-Warning (10631): VHDL Process Statement warning at cycles.vhd(17): inferring latch(es) for signal or variable "primero", which holds its previous value in one or more paths through the process File: C:/Users/akuma/Documents/GitHub/DDEX2/cycles.vhd Line: 17
-Info (10041): Inferred latch for "primero" at cycles.vhd(17) File: C:/Users/akuma/Documents/GitHub/DDEX2/cycles.vhd Line: 17
-Info (12128): Elaborating entity "digital_clock_top1s" for hierarchy "digital_clock_top1s:inst1"
+Warning (10492): VHDL Process Statement warning at cycles.vhd(39): signal "reactivar" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: Z:/Istanolion/Documents/GitHub/DDEX2/cycles.vhd Line: 39
+Warning (10631): VHDL Process Statement warning at cycles.vhd(17): inferring latch(es) for signal or variable "primero", which holds its previous value in one or more paths through the process File: Z:/Istanolion/Documents/GitHub/DDEX2/cycles.vhd Line: 17
+Info (10041): Inferred latch for "primero" at cycles.vhd(17) File: Z:/Istanolion/Documents/GitHub/DDEX2/cycles.vhd Line: 17
+Info (12128): Elaborating entity "digital_clock_top" for hierarchy "digital_clock_top:inst6"
 Info (12128): Elaborating entity "num" for hierarchy "num:inst7"
-Warning (10631): VHDL Process Statement warning at num.vhd(13): inferring latch(es) for signal or variable "temp", which holds its previous value in one or more paths through the process File: C:/Users/akuma/Documents/GitHub/DDEX2/num.vhd Line: 13
-Info (10041): Inferred latch for "temp[0]" at num.vhd(13) File: C:/Users/akuma/Documents/GitHub/DDEX2/num.vhd Line: 13
-Info (10041): Inferred latch for "temp[1]" at num.vhd(13) File: C:/Users/akuma/Documents/GitHub/DDEX2/num.vhd Line: 13
-Info (10041): Inferred latch for "temp[2]" at num.vhd(13) File: C:/Users/akuma/Documents/GitHub/DDEX2/num.vhd Line: 13
-Info (10041): Inferred latch for "temp[3]" at num.vhd(13) File: C:/Users/akuma/Documents/GitHub/DDEX2/num.vhd Line: 13
-Info (10041): Inferred latch for "temp[4]" at num.vhd(13) File: C:/Users/akuma/Documents/GitHub/DDEX2/num.vhd Line: 13
+Warning (10631): VHDL Process Statement warning at num.vhd(13): inferring latch(es) for signal or variable "temp", which holds its previous value in one or more paths through the process File: Z:/Istanolion/Documents/GitHub/DDEX2/num.vhd Line: 13
+Info (10041): Inferred latch for "temp[0]" at num.vhd(13) File: Z:/Istanolion/Documents/GitHub/DDEX2/num.vhd Line: 13
+Info (10041): Inferred latch for "temp[1]" at num.vhd(13) File: Z:/Istanolion/Documents/GitHub/DDEX2/num.vhd Line: 13
+Info (10041): Inferred latch for "temp[2]" at num.vhd(13) File: Z:/Istanolion/Documents/GitHub/DDEX2/num.vhd Line: 13
+Info (10041): Inferred latch for "temp[3]" at num.vhd(13) File: Z:/Istanolion/Documents/GitHub/DDEX2/num.vhd Line: 13
+Info (10041): Inferred latch for "temp[4]" at num.vhd(13) File: Z:/Istanolion/Documents/GitHub/DDEX2/num.vhd Line: 13
 Info (12128): Elaborating entity "led" for hierarchy "led:inst"
-Warning (10036): Verilog HDL or VHDL warning at led.vhd(12): object "bool" assigned a value but never read File: C:/Users/akuma/Documents/GitHub/DDEX2/led.vhd Line: 12
-Warning (13012): Latch num:inst7|temp[0] has unsafe behavior File: C:/Users/akuma/Documents/GitHub/DDEX2/num.vhd Line: 13
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal led:inst|count[0] File: C:/Users/akuma/Documents/GitHub/DDEX2/led.vhd Line: 19
-Warning (13012): Latch num:inst7|temp[1] has unsafe behavior File: C:/Users/akuma/Documents/GitHub/DDEX2/num.vhd Line: 13
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal led:inst|count[1] File: C:/Users/akuma/Documents/GitHub/DDEX2/led.vhd Line: 19
-Warning (13012): Latch num:inst7|temp[2] has unsafe behavior File: C:/Users/akuma/Documents/GitHub/DDEX2/num.vhd Line: 13
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal led:inst|count[2] File: C:/Users/akuma/Documents/GitHub/DDEX2/led.vhd Line: 19
-Warning (13012): Latch num:inst7|temp[3] has unsafe behavior File: C:/Users/akuma/Documents/GitHub/DDEX2/num.vhd Line: 13
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal led:inst|count[3] File: C:/Users/akuma/Documents/GitHub/DDEX2/led.vhd Line: 19
-Warning (13012): Latch num:inst7|temp[4] has unsafe behavior File: C:/Users/akuma/Documents/GitHub/DDEX2/num.vhd Line: 13
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal led:inst|count[4] File: C:/Users/akuma/Documents/GitHub/DDEX2/led.vhd Line: 19
-Info (13000): Registers with preset signals will power-up high File: C:/Users/akuma/Documents/GitHub/DDEX2/cycles.vhd Line: 32
+Info (12128): Elaborating entity "digital_clocksec" for hierarchy "digital_clocksec:inst8"
+Warning (13012): Latch num:inst7|temp[0] has unsafe behavior File: Z:/Istanolion/Documents/GitHub/DDEX2/num.vhd Line: 13
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal led:inst|count[0] File: Z:/Istanolion/Documents/GitHub/DDEX2/led.vhd Line: 19
+Warning (13012): Latch num:inst7|temp[1] has unsafe behavior File: Z:/Istanolion/Documents/GitHub/DDEX2/num.vhd Line: 13
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal led:inst|count[1] File: Z:/Istanolion/Documents/GitHub/DDEX2/led.vhd Line: 19
+Warning (13012): Latch num:inst7|temp[2] has unsafe behavior File: Z:/Istanolion/Documents/GitHub/DDEX2/num.vhd Line: 13
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal led:inst|count[2] File: Z:/Istanolion/Documents/GitHub/DDEX2/led.vhd Line: 19
+Warning (13012): Latch num:inst7|temp[3] has unsafe behavior File: Z:/Istanolion/Documents/GitHub/DDEX2/num.vhd Line: 13
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal led:inst|count[3] File: Z:/Istanolion/Documents/GitHub/DDEX2/led.vhd Line: 19
+Warning (13012): Latch num:inst7|temp[4] has unsafe behavior File: Z:/Istanolion/Documents/GitHub/DDEX2/num.vhd Line: 13
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal led:inst|count[4] File: Z:/Istanolion/Documents/GitHub/DDEX2/led.vhd Line: 19
+Info (13000): Registers with preset signals will power-up high File: Z:/Istanolion/Documents/GitHub/DDEX2/cycles.vhd Line: 32
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 74 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 98 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 68 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4802 megabytes
-    Info: Processing ended: Wed Nov 14 15:47:20 2018
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:48
+    Info (21061): Implemented 92 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4788 megabytes
+    Info: Processing ended: Wed Nov 14 20:41:57 2018
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:22
 
 

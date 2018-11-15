@@ -1,5 +1,5 @@
 Power Analyzer report for ex2pt2
-Wed Nov 14 15:47:42 2018
+Wed Nov 14 20:42:08 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -50,21 +50,21 @@ refer to the applicable agreement for further details.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
-; Maximum used               ; 2           ;
+; Average used               ; 1.05        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.2%      ;
+;     Processors 2-4         ;   1.6%      ;
 +----------------------------+-------------+
 
 
 +-------------------------------------------------------------------------------------------+
 ; Power Analyzer Summary                                                                    ;
 +----------------------------------------+--------------------------------------------------+
-; Power Analyzer Status                  ; Successful - Wed Nov 14 15:47:42 2018            ;
+; Power Analyzer Status                  ; Successful - Wed Nov 14 20:42:08 2018            ;
 ; Quartus Prime Version                  ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition      ;
 ; Revision Name                          ; ex2pt2                                           ;
 ; Top-level Entity Name                  ; final                                            ;
@@ -106,17 +106,18 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+---------------------------------------+---------------+
 
 
-+-----------------------------------------------------------+
-; Indeterminate Toggle Rates                                ;
-+-----------------------------+-----------------------------+
-; Node                        ; Reason                      ;
-+-----------------------------+-----------------------------+
-; sensor                      ; No valid clock domain found ;
-; clk                         ; No valid clock domain found ;
-; cycles:inst5|salida~clkctrl ; No valid clock domain found ;
-; clk~inputclkctrl            ; No valid clock domain found ;
-; num:inst7|Equal0~2clkctrl   ; No valid clock domain found ;
-+-----------------------------+-----------------------------+
++------------------------------------------------------------------------+
+; Indeterminate Toggle Rates                                             ;
++------------------------------------------+-----------------------------+
+; Node                                     ; Reason                      ;
++------------------------------------------+-----------------------------+
+; sensor                                   ; No valid clock domain found ;
+; clk                                      ; No valid clock domain found ;
+; cycles:inst5|salida~clkctrl              ; No valid clock domain found ;
+; clk~inputclkctrl                         ; No valid clock domain found ;
+; num:inst7|Equal0~2clkctrl                ; No valid clock domain found ;
+; digital_clocksec:inst8|clk_state~clkctrl ; No valid clock domain found ;
++------------------------------------------+-----------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -172,11 +173,11 @@ refer to the applicable agreement for further details.
 ; |final                              ; 0.63 mW (0.63 mW)                    ; 0.00 mW (0.00 mW)               ; 0.63 mW (0.63 mW)                 ; 0.00 mW (0.00 mW)                 ; |final                                ;
 ;     |hard_block:auto_generated_inst ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |final|hard_block:auto_generated_inst ;
 ;     |led:inst                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |final|led:inst                       ;
-;     |digital_clock_top1s:inst1      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |final|digital_clock_top1s:inst1      ;
-;     |digital_clock_top1s:inst2      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |final|digital_clock_top1s:inst2      ;
 ;     |to7s:inst3                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |final|to7s:inst3                     ;
 ;     |cycles:inst5                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |final|cycles:inst5                   ;
+;     |digital_clock_top:inst6        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |final|digital_clock_top:inst6        ;
 ;     |num:inst7                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |final|num:inst7                      ;
+;     |digital_clocksec:inst8         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |final|digital_clocksec:inst8         ;
 +-------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------+
 (1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
 
@@ -244,19 +245,19 @@ refer to the applicable agreement for further details.
 ;                                                                                        ;             ;           ;             ;               ;
 ; Node, entity or clock assignment                                                       ;             ;           ;             ;               ;
 ;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 0 (0.0%)    ; 0 (0.0%)  ; 0 (0.0%)    ; 0 (0.0%)      ;
-;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 3 (1.8%)    ; 0 (0.0%)  ; 0 (0.0%)    ; 3 (2.7%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 4 (1.8%)    ; 0 (0.0%)  ; 0 (0.0%)    ; 4 (2.7%)      ;
 ;                                                                                        ;             ;           ;             ;               ;
 ; Vectorless estimation                                                                  ;             ;           ;             ;               ;
-;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 154 (94.5%) ; 5 (35.7%) ; 39 (100.0%) ; 110 (100.0%)  ;
-;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 8 (4.9%)    ; 2 (14.3%) ; 0 (0.0%)    ; 6 (5.5%)      ;
-;     -- Number of signals with Static Probability from Vectorless estimation            ; 151 (92.6%) ; 5 (35.7%) ; 39 (100.0%) ; 107 (97.3%)   ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 211 (96.3%) ; 6 (42.9%) ; 56 (100.0%) ; 149 (100.0%)  ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 5 (2.3%)    ; 1 (7.1%)  ; 0 (0.0%)    ; 4 (2.7%)      ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 207 (94.5%) ; 6 (42.9%) ; 56 (100.0%) ; 145 (97.3%)   ;
 ;                                                                                        ;             ;           ;             ;               ;
 ; Default assignment                                                                     ;             ;           ;             ;               ;
 ;     -- Number of signals with Toggle Rate from Default assignment                      ; 0 (0.0%)    ; 0 (0.0%)  ; 0 (0.0%)    ; 0 (0.0%)      ;
-;     -- Number of signals with Static Probability from Default assignment               ; 9 (5.5%)    ; 9 (64.3%) ; 0 (0.0%)    ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 8 (3.7%)    ; 8 (57.1%) ; 0 (0.0%)    ; 0 (0.0%)      ;
 ;                                                                                        ;             ;           ;             ;               ;
 ; Assumed 0                                                                              ;             ;           ;             ;               ;
-;     -- Number of signals with Toggle Rate assumed 0                                    ; 9 (5.5%)    ; 9 (64.3%) ; 0 (0.0%)    ; 0 (0.0%)      ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 8 (3.7%)    ; 8 (57.1%) ; 0 (0.0%)    ; 0 (0.0%)      ;
 +----------------------------------------------------------------------------------------+-------------+-----------+-------------+---------------+
 
 
@@ -274,21 +275,21 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Power Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov 14 15:47:38 2018
+    Info: Processing started: Wed Nov 14 20:42:07 2018
 Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off ex2pt2 -c ex2pt2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Warning (335093): The Timing Analyzer is analyzing 5 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'ex2pt2.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
-Warning (332060): Node: digital_clock_top1s:inst2|clk_state was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register led:inst|count[1] is being clocked by digital_clock_top1s:inst2|clk_state
+Warning (332060): Node: digital_clocksec:inst8|clk_state was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register led:inst|count[1] is being clocked by digital_clocksec:inst8|clk_state
 Warning (332060): Node: clk was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register digital_clock_top1s:inst2|clk_state is being clocked by clk
-Warning (332060): Node: digital_clock_top1s:inst1|clk_state was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Register to7s:inst3|salida is being clocked by digital_clock_top1s:inst1|clk_state
+    Info (13166): Register digital_clocksec:inst8|clk_state is being clocked by clk
+Warning (332060): Node: digital_clock_top:inst6|clk_state was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register to7s:inst3|salida is being clocked by digital_clock_top:inst6|clk_state
 Warning (332060): Node: led:inst|count[0] was determined to be a clock but was found without an associated clock assignment.
-    Info (13166): Latch num:inst7|temp[3] is being clocked by led:inst|count[0]
+    Info (13166): Latch num:inst7|temp[0] is being clocked by led:inst|count[0]
 Warning (332068): No clocks defined in design.
 Info (223000): Starting Vectorless Power Activity Estimation
 Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
@@ -299,9 +300,9 @@ Info (334004): Delay annotation completed successfully
 Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
 Info (215031): Total thermal power estimate for the design is 148.32 mW
 Info: Quartus Prime Power Analyzer was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4800 megabytes
-    Info: Processing ended: Wed Nov 14 15:47:42 2018
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 4803 megabytes
+    Info: Processing ended: Wed Nov 14 20:42:09 2018
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

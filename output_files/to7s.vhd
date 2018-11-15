@@ -23,16 +23,16 @@ constant valor7 : std_logic_vector (7 downto 0):="00000111";
 constant valor8 : std_logic_vector (7 downto 0):="01111111";
 constant valor9 : std_logic_vector (7 downto 0):="01101111";
 constant valor10 : std_logic_vector (7 downto 0):="01011111";
-constant valor11 : std_logic_vector (7 downto 0):="01111110";
-constant valor12 : std_logic_vector (7 downto 0):="01001111";
-constant valor13 : std_logic_vector (7 downto 0):="00111100";
-constant valor14 : std_logic_vector (7 downto 0):="01011110";
+constant valor11 : std_logic_vector (7 downto 0):="01111100";
+constant valor12 : std_logic_vector (7 downto 0):="00111001";
+constant valor13 : std_logic_vector (7 downto 0):="01011110";
+constant valor14 : std_logic_vector (7 downto 0):="01111001";
 constant valor15 : std_logic_vector (7 downto 0):="01110001";
 begin
 	process (cont,entrada,salida, temp, seguira)
 	begin
 		if seguira='0' then
-			if rising_edge (entrada) then 
+			if falling_edge (entrada) then 
 				if cont=0  then
 					salida<=valor0(count);
 					count<=count+1;
