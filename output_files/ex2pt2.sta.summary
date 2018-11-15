@@ -3,48 +3,48 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'digital_clock_top:inst6|clk_state'
-Slack : -5.201
-TNS   : -8.313
+Slack : -6.317
+TNS   : -10.965
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -4.338
-TNS   : -136.726
+Slack : -4.333
+TNS   : -133.135
 
 Type  : Slow 1200mV 85C Model Setup 'digital_clocksec:inst8|clk_state'
-Slack : -2.557
-TNS   : -12.288
+Slack : -3.729
+TNS   : -11.956
 
 Type  : Slow 1200mV 85C Model Setup 'led:inst|count[0]'
-Slack : -1.622
-TNS   : -5.648
+Slack : -2.103
+TNS   : -6.103
 
 Type  : Slow 1200mV 85C Model Hold 'led:inst|count[0]'
-Slack : 0.359
+Slack : 0.337
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'digital_clock_top:inst6|clk_state'
-Slack : 0.363
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.471
+Slack : 0.364
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'digital_clocksec:inst8|clk_state'
-Slack : 0.634
+Slack : 0.394
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.472
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'digital_clock_top:inst6|clk_state'
-Slack : -6.262
-TNS   : -36.877
+Slack : -8.170
+TNS   : -50.410
 
 Type  : Slow 1200mV 85C Model Removal 'digital_clock_top:inst6|clk_state'
-Slack : 0.328
+Slack : 1.118
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -65.454
+TNS   : -63.967
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'digital_clock_top:inst6|clk_state'
 Slack : -1.487
@@ -52,55 +52,55 @@ TNS   : -11.896
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'digital_clocksec:inst8|clk_state'
 Slack : -1.487
-TNS   : -8.922
+TNS   : -7.435
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'led:inst|count[0]'
-Slack : 0.416
+Slack : 0.387
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'digital_clock_top:inst6|clk_state'
-Slack : -4.929
-TNS   : -7.773
+Slack : -5.948
+TNS   : -9.911
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -4.113
-TNS   : -125.780
+Slack : -4.101
+TNS   : -122.325
 
 Type  : Slow 1200mV 0C Model Setup 'digital_clocksec:inst8|clk_state'
-Slack : -2.277
+Slack : -3.452
 TNS   : -10.920
 
 Type  : Slow 1200mV 0C Model Setup 'led:inst|count[0]'
-Slack : -1.774
-TNS   : -6.304
+Slack : -2.241
+TNS   : -6.772
+
+Type  : Slow 1200mV 0C Model Hold 'led:inst|count[0]'
+Slack : 0.319
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'digital_clock_top:inst6|clk_state'
 Slack : 0.324
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'led:inst|count[0]'
-Slack : 0.342
+Type  : Slow 1200mV 0C Model Hold 'digital_clocksec:inst8|clk_state'
+Slack : 0.352
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.446
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'digital_clocksec:inst8|clk_state'
-Slack : 0.616
+Slack : 0.448
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'digital_clock_top:inst6|clk_state'
-Slack : -5.693
-TNS   : -33.548
+Slack : -7.449
+TNS   : -46.014
 
 Type  : Slow 1200mV 0C Model Removal 'digital_clock_top:inst6|clk_state'
-Slack : 0.296
+Slack : 1.007
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -65.454
+TNS   : -63.967
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'digital_clock_top:inst6|clk_state'
 Slack : -1.487
@@ -108,55 +108,55 @@ TNS   : -11.896
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'digital_clocksec:inst8|clk_state'
 Slack : -1.487
-TNS   : -8.922
+TNS   : -7.435
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'led:inst|count[0]'
-Slack : 0.290
+Slack : 0.204
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'digital_clock_top:inst6|clk_state'
-Slack : -1.654
-TNS   : -1.720
+Slack : -2.108
+TNS   : -2.108
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -1.036
-TNS   : -25.860
+Slack : -1.062
+TNS   : -25.401
 
 Type  : Fast 1200mV 0C Model Setup 'digital_clocksec:inst8|clk_state'
-Slack : -0.772
-TNS   : -2.672
+Slack : -0.988
+TNS   : -2.542
 
 Type  : Fast 1200mV 0C Model Setup 'led:inst|count[0]'
-Slack : -0.162
-TNS   : -0.298
-
-Type  : Fast 1200mV 0C Model Hold 'digital_clocksec:inst8|clk_state'
-Slack : 0.106
-TNS   : 0.000
+Slack : -0.412
+TNS   : -0.913
 
 Type  : Fast 1200mV 0C Model Hold 'digital_clock_top:inst6|clk_state'
 Slack : 0.151
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Hold 'digital_clocksec:inst8|clk_state'
+Slack : 0.166
+TNS   : 0.000
+
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.169
+Slack : 0.170
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'led:inst|count[0]'
-Slack : 0.278
+Slack : 0.238
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'digital_clock_top:inst6|clk_state'
-Slack : -2.136
-TNS   : -11.766
+Slack : -3.015
+TNS   : -17.994
 
 Type  : Fast 1200mV 0C Model Removal 'digital_clock_top:inst6|clk_state'
-Slack : -0.036
-TNS   : -0.108
+Slack : 0.329
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -52.226
+TNS   : -51.050
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'digital_clock_top:inst6|clk_state'
 Slack : -1.000
@@ -164,10 +164,10 @@ TNS   : -8.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'digital_clocksec:inst8|clk_state'
 Slack : -1.000
-TNS   : -6.000
+TNS   : -5.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'led:inst|count[0]'
-Slack : 0.373
+Slack : 0.298
 TNS   : 0.000
 
 ------------------------------------------------------------

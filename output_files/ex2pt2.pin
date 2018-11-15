@@ -76,7 +76,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : A6        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : A7        :        :                   :         : 8         :                
 sensors                      : A8        : output : 3.3-V LVTTL       :         : 8         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A9        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A10       :        :                   :         : 8         :                
+pin_name1                    : A10       : output : 3.3-V LVTTL       :         : 8         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A11       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A12       :        :                   :         : 6         :                
 GND                          : A13       : gnd    :                   :         :           :                

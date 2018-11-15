@@ -1,15 +1,15 @@
-Fitter Status : Successful - Wed Nov 14 20:42:03 2018
+Fitter Status : Successful - Thu Nov 15 08:00:18 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : ex2pt2
 Top-level Entity Name : final
 Family : MAX 10
 Device : 10M08SAU169C8G
 Timing Models : Final
-Total logic elements : 99 / 8,064 ( 1 % )
-    Total combinational functions : 93 / 8,064 ( 1 % )
-    Dedicated logic registers : 56 / 8,064 ( < 1 % )
-Total registers : 56
-Total pins : 6 / 130 ( 5 % )
+Total logic elements : 94 / 8,064 ( 1 % )
+    Total combinational functions : 91 / 8,064 ( 1 % )
+    Dedicated logic registers : 54 / 8,064 ( < 1 % )
+Total registers : 54
+Total pins : 7 / 130 ( 5 % )
 Total virtual pins : 0
 Total memory bits : 0 / 387,072 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )

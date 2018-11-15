@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Wed Nov 14 20:41:57 2018
+Analysis & Synthesis Status : Successful - Thu Nov 15 08:00:04 2018
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : ex2pt2
 Top-level Entity Name : final
 Family : MAX 10
-Total logic elements : 92
-    Total combinational functions : 92
-    Dedicated logic registers : 56
-Total registers : 56
-Total pins : 6
+Total logic elements : 90
+    Total combinational functions : 89
+    Dedicated logic registers : 54
+Total registers : 54
+Total pins : 7
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

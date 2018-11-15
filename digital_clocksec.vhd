@@ -9,7 +9,7 @@ port (
 end digital_clocksec;
 
 architecture rtl of digital_clocksec is
-	constant max_count: INTEGER := 6000000;
+	constant max_count: INTEGER := 3000000;
 	signal count: INTEGER range 0 to max_count;
 	signal clk_state: STD_LOGIC := '0';
 	

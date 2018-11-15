@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M08SAU169) Path("Z:/Istanolion/Documents/GitHub/DDEX2/output_files/") File("ex2pt2.sof") MfrSpec(OpMask(1));
+		Device PartName(10M08SAU169) Path("C:/Users/akuma/Documents/GitHub/DDEX2/output_files/") File("ex2pt2.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

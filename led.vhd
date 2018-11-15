@@ -8,7 +8,7 @@ entity led is
 end led;
 
 architecture Behavioral of led is
-constant max_count: INTEGER := 16;
+constant max_count: INTEGER := 15;
 signal bool: std_logic:='1' ;
 signal temp: std_logic ;
 
@@ -17,11 +17,12 @@ begin
 	process (led, count,clk,bool,temp)
 	begin
 		if (clk'event and clk='1' and led='1'and bool='1') then
+				count <= count+1;
 				if count < max_count then 
-					count <= count+1;
 					temp<='0';
 				else
 					count <= 0;
+					temp<='0';
 				end if;
 		end if;
 		if (led='0') then

@@ -7,6 +7,7 @@ sensor => sensors.DATAIN
 outclk <= cycles:inst5.salida
 sensors <= sensor.DB_MAX_OUTPUT_PORT_TYPE
 reloj <= cycles:inst5.salida
+pin_name1 <= num[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |final|to7s:inst3
@@ -627,12 +628,11 @@ clk => count[0].CLK
 clk => count[1].CLK
 clk => count[2].CLK
 clk => count[3].CLK
-clk => count[4].CLK
 salida[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
 salida[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
 salida[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
 salida[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
-salida[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
+salida[4] <= <GND>
 salida[5] <= <GND>
 salida[6] <= <GND>
 salida[7] <= <GND>
@@ -686,7 +686,6 @@ clk12mhz => count[18].CLK
 clk12mhz => count[19].CLK
 clk12mhz => count[20].CLK
 clk12mhz => count[21].CLK
-clk12mhz => count[22].CLK
 clk <= clk_state.DB_MAX_OUTPUT_PORT_TYPE
 
 
