@@ -32,57 +32,57 @@ begin
 	process (cont,entrada,salida, temp, seguira)
 	begin
 		if seguira='0' then
-		if rising_edge (entrada) then 
-			if cont=0  then
-				salida<=valor0(count);
-				count<=count+1;
-			elsif cont=1  then
-				salida<=valor1(count);
-				count<=count+1;
-			elsif cont=2  then
-				salida<=valor2(count);
-				count<=count+1;
-			elsif cont=3  then
-				salida<=valor3(count);
-				count<=count+1;
-			elsif cont=4  then
-				salida<=valor4(count);
-				count<=count+1;
-			elsif cont=5  then
-				salida<=valor5(count);
-				count<=count+1;
-			elsif cont=6  then
-				salida<=valor6(count);
-				count<=count+1;
-			elsif cont=7  then
-				salida<=valor7(count);
-				count<=count+1;
-			elsif cont=8  then
-				salida<=valor8(count);
-				count<=count+1;
-			elsif cont=9  then
-				salida<=valor9(count);
-				count<=count+1;
-			elsif cont=10  then
-				salida<=valor10(count);
-				count<=count+1;
-			elsif cont=11  then
-				salida<=valor11(count);
-				count<=count+1;
-			elsif cont=12  then
-				salida<=valor12(count);
-				count<=count+1;
-			elsif cont=13  then
-				salida<=valor13(count);
-				count<=count+1;
-			elsif cont=14 then
-				salida<=valor14(count);
-				count<=count+1;
-			elsif cont=15  then
-				salida<=valor15(count);
-				count<=count+1;
-			end if;	
-		end if;
+			if rising_edge (entrada) then 
+				if cont=0  then
+					salida<=valor0(count);
+					count<=count+1;
+				elsif cont=1  then
+					salida<=valor1(count);
+					count<=count+1;
+				elsif cont=2  then
+					salida<=valor2(count);
+					count<=count+1;
+				elsif cont=3  then
+					salida<=valor3(count);
+					count<=count+1;
+				elsif cont=4  then
+					salida<=valor4(count);
+					count<=count+1;
+				elsif cont=5  then
+					salida<=valor5(count);
+					count<=count+1;
+				elsif cont=6  then
+					salida<=valor6(count);
+					count<=count+1;
+				elsif cont=7  then
+					salida<=valor7(count);
+					count<=count+1;
+				elsif cont=8  then
+					salida<=valor8(count);
+					count<=count+1;
+				elsif cont=9  then
+					salida<=valor9(count);
+					count<=count+1;
+				elsif cont=10  then
+					salida<=valor10(count);
+					count<=count+1;
+				elsif cont=11  then
+					salida<=valor11(count);
+					count<=count+1;
+				elsif cont=12  then
+					salida<=valor12(count);
+					count<=count+1;
+				elsif cont=13  then
+					salida<=valor13(count);
+					count<=count+1;
+				elsif cont=14 then
+					salida<=valor14(count);
+					count<=count+1;
+				elsif cont=15  then
+					salida<=valor15(count);
+					count<=count+1;
+				end if;	
+			end if;
 		else 
 			count<=0;
 		end if;
